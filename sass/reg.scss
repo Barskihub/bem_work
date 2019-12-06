@@ -1,0 +1,32 @@
+// Local settings
+*,
+*::before,
+*::after,
+*:focus {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a:hover,
+button:hover,
+input:hover,
+select:hover {
+  cursor: pointer;
+}
+@import "_reg-finish.scss";
+@import "_reg-general-info-1.scss";
+@import "_reg-contacts-info-2.scss";
+@import "_reg-services.scss";
+@import "_reg-licenses-4.scss";
+@import "_reg-sales.scss";
+@import "_reg-our-masters.scss";
+@import "_reg-master-cl.scss";
+@import "_reg-vacancy.scss";
+@import "_reg-additional.scss";
+@import "_reg-table.scss";
+@import "_reg-rocket.scss";
+@import "_reg-fonts.scss";
+@import "_reg-inputs.scss";
+@import "_reg-title.scss";
+@import "_reg-section-title.scss";
+@import "_reg-btns.scss";

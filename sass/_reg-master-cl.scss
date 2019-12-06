@@ -1,0 +1,125 @@
+.main-inner-m-class {
+  background-color: #f6f6f6;
+  position: relative;
+  margin-top: -12px;
+  padding-bottom: 10px;
+}
+.m-class {
+  max-width: 1230px;
+  margin: auto;
+  padding-top: 49px;
+  padding-bottom: 97px;
+  display: flex;
+  justify-content: space-between;
+  &__item {
+    margin-right: 20px;
+  }
+  &__label {
+    &-p {
+      margin-bottom: 13px;
+    }
+    &-wrap {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-top: 70px;
+    }
+  }
+  &__new-tr {
+    &-p_file {
+      width: 270px;
+      background: #ffffff;
+      position: relative;
+      padding-top: 5px;
+      &-img {
+        position: absolute;
+        right: 10px;
+        top: 5px;
+      }
+    }
+    &-input_hide {
+      display: none;
+    }
+    &-after-input {
+      width: 255px;
+      height: 28px;
+      color: #959595;
+      font-family: "Gotham Pro";
+      font-size: 14px;
+      font-weight: 300;
+      margin-top: 14px;
+    }
+  }
+  &__input {
+    width: 270px;
+  }
+  &__btn {
+    margin-top: 13px;
+    margin-bottom: 119px;
+  }
+}
+
+@media (max-width: 1300px) {
+  .m-class {
+    padding-left: 30px;
+    padding-right: 30px;
+    flex-direction: column;
+    &__form-pic {
+      display: none;
+    }
+    &__label {
+      margin-right: 15px;
+      &-wrap {
+        justify-content: left;
+        flex-wrap: wrap;
+      }
+    }
+    &__btn {
+      font-size: 14px !important;
+      padding: 15px 30px 13px 30px !important;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .m-class {
+    &__btn {
+      margin: auto;
+      margin-top: 20px;
+    }
+    &__label {
+      &-wrap {
+        justify-content: center;
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .m-class {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 17px;
+    &__item {
+      margin: auto;
+      &_title {
+        margin-left: 0;
+      }
+    }
+    &__btn {
+      margin: auto;
+      margin-top: 13px;
+    }
+    &__label {
+      margin: auto;
+      text-align: center;
+      margin-bottom: 20px;
+      &-wrap {
+        margin-top: 20px;
+      }
+    }
+    &__btn {
+      margin-bottom: 0;
+    }
+  }
+}

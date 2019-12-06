@@ -1,0 +1,119 @@
+.license {
+  max-width: 1230px;
+  margin: auto;
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  &__form-title {
+    background: url("../img/form-4-back-title.png") no-repeat;
+    background-size: 100%;
+    width: 462px;
+    height: 227px;
+    align-items: center;
+    justify-content: center;
+  }
+  &__title-h2 {
+    width: 220px !important;
+  }
+  &__form-h4 {
+    color: #3f3f3f;
+    font-family: "Gotham Pro";
+    font-size: 17px;
+    font-weight: 300;
+    margin-left: 27px;
+  }
+  &__slider {
+    display: flex;
+    width: 730px;
+    &-btn {
+      border: none;
+      background: none;
+      width: 10px;
+    }
+  }
+  &__file {
+    &-container {
+      display: flex;
+      flex-wrap: wrap;
+      &-label {
+        width: 69px;
+        height: 69px;
+        border-radius: 5px;
+        border: 3px solid #981b6c;
+        background-color: #ffffff;
+        margin: 21px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &-plus {
+          width: 30px;
+          height: 29px;
+          background-color: #981b6c;
+          border-radius: 30px;
+          color: #ffffff;
+          font-family: "Gotham Pro";
+          font-size: 31px;
+          font-weight: 500;
+          display: block;
+          text-align: center;
+        }
+        &:hover {
+          cursor: pointer;
+        }
+      }
+      &-input {
+        display: none;
+      }
+      &-pic {
+        width: 71px;
+        height: 71px;
+        border: 1px solid #981b6c;
+        border-radius: 5px;
+        margin: 21px;
+      }
+      &-img {
+        width: 69px;
+        height: 69px;
+        margin: auto;
+      }
+    }
+  }
+  &__btn {
+    margin-left: 30px;
+    margin-top: 40px;
+    margin-bottom: 75px;
+  }
+}
+
+@media (max-width: 1240px) {
+  .license {
+    flex-direction: column;
+    padding-left: 30px;
+    padding-right: 30px;
+    &__form-title {
+      background: none;
+      width: auto;
+      height: auto;
+      justify-content: left;
+    }
+    &__form-h4 {
+      margin-left: 0;
+      margin-top: 20px;
+    }
+    &__btn {
+      margin-left: auto;
+      margin-right: auto;
+      padding: 15px 30px 13px 30px !important;
+    }
+    &__slider {
+      width: 93vw;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .license {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}

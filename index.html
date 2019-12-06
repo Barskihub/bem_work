@@ -1,0 +1,1767 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/reg.css" />
+    <title>Регистрация</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <main class="main">
+        <div class="main-inner-desk">
+          <section class="desk">
+            <h1 class="desk__title">
+              Регистрация новой компании
+            </h1>
+            <div class="desk__desc-img">
+              <img src="img/desk-img.png" alt="" class="desk__desc-picture" />
+            </div>
+          </section>
+        </div>
+        <div class="main-inner-general-info">
+          <section class="general-info">
+            <div class="rocket">
+              <img src="img/rocket.svg" alt="Ракета" class="rocket__img" />
+            </div>
+            <div class="general-info__img">
+              <img
+                src="img/g1-img.png"
+                alt="Фото к 1 секции"
+                class="general-info__pic"
+              />
+            </div>
+            <form action="submit" class="general-info__form">
+              <div class="general-info__form-title form-title">
+                <div class="general-info__form-title-pic form-title-pic">
+                  <img
+                    src="img/form-1-title.svg"
+                    alt=""
+                    class="general-info__form-title-img form-title-img"
+                  />
+                </div>
+                <div class="general-info__form-title-num form-title-num">
+                  <p class="general-info__form-title-num-p form-title-num-p">
+                    1
+                  </p>
+                </div>
+                <div class="general-info__form-title-name form-title-name">
+                  <h2 class="general-info__form-title-h2 form-title-h2">
+                    Общая информация
+                  </h2>
+                </div>
+              </div>
+              <div class="general-info__form-container">
+                <label
+                  for="general-info__logo-company"
+                  class="general-info__form-i-logo"
+                >
+                  <div class="general-info__form-i-logo-content-wrap">
+                    <div class="general-info__form-i-logo-content">
+                      <div class="general-info__form-i-logo-img"></div>
+                      <p class="general-info__form-i-logo-p">
+                        Добавить лого салона
+                      </p>
+                    </div>
+                  </div>
+                  <input
+                    type="file"
+                    id="general-info__logo-company"
+                    class="general-info__logo-company-in"
+                  />
+                </label>
+                <div class="general-info__form-options">
+                  <label
+                    for="general-info__company-name"
+                    class="general-info__form-label"
+                  >
+                    <p class="general-info__form-p all-form-p">
+                      Название компании:
+                    </p>
+                    <input
+                      type="text"
+                      id="general-info__company-name"
+                      placeholder="Beauty Name"
+                      class="general-info__form-input all-form-input"
+                    />
+                  </label>
+                  <label
+                    for="general-info__company-subtitle"
+                    class="general-info__form-label all-form-label"
+                  >
+                    <p class="general-info__form-p all-form-p">
+                      Подзаголовок компании:
+                    </p>
+                    <input
+                      type="text"
+                      id="general-info__company-subtitle"
+                      placeholder="Салон красоты"
+                      class="general-info__form-input all-form-input"
+                    />
+                  </label>
+                  <label
+                    for="general-info__company-region"
+                    class="general-info__form-label"
+                  >
+                    <p class="general-info__form-p all-form-p">
+                      Район города:
+                    </p>
+                    <select
+                      id="general-info__company-region"
+                      class="general-info__form-input all-form-input general-info__form-input-select"
+                    >
+                      <option value="Название города">Название города</option>
+                      <option value="Название города">Название города</option>
+                    </select>
+                  </label>
+                  <label
+                    for="general-info__company-date"
+                    class="general-info__form-label general-info__form-label_cal"
+                  >
+                    <p class="general-info__form-p all-form-p">
+                      Дата организации компании:
+                    </p>
+                    <input
+                      type="date"
+                      value="2017-06-01"
+                      id="general-info__company-date"
+                      class="all-form-input general-info__form-input"
+                    />
+                  </label>
+                  <label
+                    for="general-info__company-log-in"
+                    class="general-info__form-label"
+                  >
+                    <p class="general-info__form-p all-form-p">
+                      Добавить фото входа:
+                    </p>
+                    <input
+                      type="file"
+                      id="general-info__company-log-in"
+                      class="general-info__company-log-in_n"
+                    />
+                    <div class="general-info__company-log-in-add">
+                      <img
+                        src="img/log-in-add.png"
+                        alt="Загрузка лого"
+                        class="general-info__company-log-in-img"
+                      />
+                      <p class="general-info__company-log-in-p">
+                        Допумтимые форматы <br />
+                        JPEG, PNG, <br />
+                        максимальный размер <br />
+                        файла 5Мб.
+                      </p>
+                    </div>
+                  </label>
+                  <button class="general-info__btn btn" type="submit">
+                    Сохранить и продолжить
+                  </button>
+                </div>
+              </div>
+            </form>
+          </section>
+        </div>
+        <div class="main-inner-contacts-info">
+          <div class="rocket contacts-info__rocket">
+            <img src="img/rocket.svg" alt="Ракета" class="rocket__img" />
+          </div>
+          <section class="contacts-info">
+            <div class="contacts-info__form-title form-title">
+              <div class="contacts-info__form-title-pic form-title-pic">
+                <img
+                  src="img/form-2-title.svg"
+                  alt=""
+                  class="contacts-info__form-title-img form-title-img"
+                />
+              </div>
+              <div class="contacts-info__form-title-num form-title-num">
+                <p class="contacts-info__form-title-num-p form-title-num-p">
+                  2
+                </p>
+              </div>
+              <div class="contacts-info__form-title-name form-title-name">
+                <h2 class="contacts-info__form-title-h2 form-title-h2">
+                  Контактная информация
+                </h2>
+              </div>
+            </div>
+            <div class="contacts-info__content">
+              <div class="contacts-info__pic">
+                <img
+                  src="img/plane.svg"
+                  alt="Картинка к самолетику"
+                  class="contacts-info__img"
+                />
+              </div>
+              <div class="contacts-info__form-wrap">
+                <form action="#" class="contacts-info__form">
+                  <label
+                    for="contacts-info__adress"
+                    class="contacts-info__form-label"
+                  >
+                    <p class="contacts-info__form-label-p all-form-p">
+                      Адрес:
+                    </p>
+                    <input
+                      id="contacts-info__adress"
+                      type="text"
+                      class="contacts-info__form-input all-form-input"
+                      value="Г. Москва Ул. Название"
+                    />
+                  </label>
+                  <label
+                    for="contacts-info__site"
+                    class="contacts-info__form-label"
+                  >
+                    <p class="contacts-info__form-label-p all-form-p">
+                      Сайт:
+                    </p>
+                    <input
+                      id="contacts-info__site"
+                      type="text"
+                      class="contacts-info__form-input all-form-input"
+                      value="Г. Москва Ул. Название"
+                    />
+                  </label>
+                  <label
+                    for="contacts-info__inn"
+                    class="contacts-info__form-label"
+                  >
+                    <p class="contacts-info__form-label-p all-form-p">
+                      ИНН:
+                    </p>
+                    <input
+                      id="contacts-info__inn"
+                      type="text"
+                      class="contacts-info__form-input all-form-input"
+                      value="Г. Москва Ул. Название"
+                    />
+                  </label>
+                  <label
+                    for="contacts-info__tel"
+                    class="contacts-info__form-label"
+                  >
+                    <p class="contacts-info__form-label-p all-form-p">
+                      Телефон:
+                    </p>
+                    <input
+                      id="contacts-info__tel"
+                      type="text"
+                      class="contacts-info__form-input all-form-input"
+                      value="Г. Москва Ул. Название"
+                    />
+                  </label>
+                  <label
+                    for="contacts-info__work-time"
+                    class="contacts-info__form-label"
+                  >
+                    <p class="contacts-info__form-label-p all-form-p">
+                      Время работы:
+                    </p>
+                    <input
+                      id="contacts-info__work-time"
+                      type="text"
+                      class="contacts-info__form-input all-form-input"
+                      value="Г. Москва Ул. Название"
+                    />
+                  </label>
+                  <label
+                    for="contacts-info__kpp"
+                    class="contacts-info__form-label"
+                  >
+                    <p class="contacts-info__form-label-p all-form-p">
+                      КПП:
+                    </p>
+                    <input
+                      id="contacts-info__kpp"
+                      type="text"
+                      class="contacts-info__form-input all-form-input"
+                      value="Г. Москва Ул. Название"
+                    />
+                  </label>
+                  <label
+                    for="contacts-info__tel_mob"
+                    class="contacts-info__form-label"
+                  >
+                    <p class="contacts-info__form-label-p all-form-p">
+                      Мобильный телефон:
+                    </p>
+                    <input
+                      id="contacts-info__tel_mob"
+                      type="text"
+                      class="contacts-info__form-input all-form-input"
+                      value="Г. Москва Ул. Название"
+                    />
+                  </label>
+                  <label
+                    for="contacts-info__work-time_2"
+                    class="contacts-info__form-label"
+                  >
+                    <p class="contacts-info__form-label-p all-form-p">
+                      Время работы:
+                    </p>
+                    <input
+                      id="contacts-info__work-time_2"
+                      type="text"
+                      class="contacts-info__form-input all-form-input"
+                      value="Г. Москва Ул. Название"
+                    />
+                  </label>
+                  <label
+                    for="contacts-info__bank"
+                    class="contacts-info__form-label"
+                  >
+                    <p class="contacts-info__form-label-p all-form-p">
+                      Банк:
+                    </p>
+                    <input
+                      id="contacts-info__bank"
+                      type="text"
+                      class="contacts-info__form-input all-form-input"
+                      value="Г. Москва Ул. Название"
+                    />
+                  </label>
+                  <label
+                    for="contacts-info__Email"
+                    class="contacts-info__form-label"
+                  >
+                    <p class="contacts-info__form-label-p all-form-p">
+                      Email:
+                    </p>
+                    <input
+                      id="contacts-info__Email"
+                      type="text"
+                      class="contacts-info__form-input all-form-input"
+                      value="Г. Москва Ул. Название"
+                    />
+                  </label>
+                  <label
+                    for="contacts-info__work-time_3"
+                    class="contacts-info__form-label"
+                  >
+                    <p class="contacts-info__form-label-p all-form-p">
+                      Время работы:
+                    </p>
+                    <input
+                      id="contacts-info__work-time_3"
+                      type="text"
+                      class="contacts-info__form-input all-form-input"
+                      value="Г. Москва Ул. Название"
+                    />
+                  </label>
+                  <label
+                    for="contacts-info__bik"
+                    class="contacts-info__form-label"
+                  >
+                    <p class="contacts-info__form-label-p all-form-p">
+                      БИК:
+                    </p>
+                    <input
+                      id="contacts-info__bik"
+                      type="text"
+                      class="contacts-info__form-input all-form-input"
+                      value="Г. Москва Ул. Название"
+                    />
+                  </label>
+                  <div class="contacts-info__form-bottom">
+                    <div class="contacts-info__form-social">
+                      <h4 class="contacts-info__form-social-title">
+                        Подключить соц сети:
+                      </h4>
+                      <div class="contacts-info__form-social-container">
+                        <button class="contacts-info__form-social-btn">
+                          <img
+                            src="img/social-vk.png"
+                            alt="Вконтакте"
+                            class="contacts-info__form-social-img"
+                          />
+                        </button>
+                        <button class="contacts-info__form-social-btn">
+                          <img
+                            src="img/fb.png"
+                            alt="Вконтакте"
+                            class="contacts-info__form-social-img"
+                          />
+                        </button>
+                        <button class="contacts-info__form-social-btn">
+                          <img
+                            src="img/ok.png"
+                            alt="Вконтакте"
+                            class="contacts-info__form-social-img"
+                          />
+                        </button>
+                        <button class="contacts-info__form-social-btn">
+                          <img
+                            src="img/inst.png"
+                            alt="Вконтакте"
+                            class="contacts-info__form-social-img"
+                          />
+                        </button>
+                      </div>
+                    </div>
+                    <div class="contacts-info__btn-wrap">
+                      <button class="contacts-info__form-btn btn" type="submit">
+                        Сохранить и продолжить
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </section>
+        </div>
+        <div class="main-inner-services">
+          <div class="rocket services__rocket">
+            <img src="img/rocket.svg" alt="Ракета" class="rocket__img" />
+          </div>
+          <section class="services">
+            <div class="services__top">
+              <div class="services__top-item">
+                <div class="services__form-title form-title">
+                  <div class="services__form-title-pic form-title-pic">
+                    <img
+                      src="img/form-3-title.svg"
+                      alt=""
+                      class="services__form-title-img form-title-img"
+                    />
+                  </div>
+                  <div class="services__form-title-num form-title-num">
+                    <p class="services__form-title-num-p form-title-num-p">
+                      3
+                    </p>
+                  </div>
+                  <div class="services__form-title-name form-title-name">
+                    <h2 class="services__form-title-h2 form-title-h2">
+                      Услуги салона
+                    </h2>
+                  </div>
+                </div>
+                <div class="services__form-subtitle">
+                  <p class="services__form-subtitle-p">
+                    Текст с кратким описанием в одну или несколько строк идет
+                    тут. Текст с кратким описанием в одну Текст с кратким
+                    описанием в одну или несколько строк идет тут.
+                  </p>
+                </div>
+              </div>
+              <div class="services__top-item">
+                <div class="services__pic">
+                  <img
+                    src="img/form-3-png.png"
+                    alt="Фото к 3 секции"
+                    class="services__img"
+                  />
+                </div>
+              </div>
+            </div>
+            <form action="#" class="services__form">
+              <div class="services__pre-table">
+                <label for="services__sort" class="services__pre-table-label">
+                  Сортировать по
+                  <div class="services__select-wrap">
+                    <select
+                      name="services-sort"
+                      id="services__sort"
+                      class="services__pre-table-select"
+                    >
+                      <option value="order" class="services__pre-table-option"
+                        >Порядку</option
+                      >
+                      <option value="cost" class="services__pre-table-option"
+                        >Цене</option
+                      >
+                    </select>
+                    <img
+                      src="img/select-arrow-aft.png"
+                      alt="Стрелка"
+                      class="services__pre-table-img"
+                    />
+                  </div>
+                </label>
+                <label for="services__show" class="services__pre-table-label">
+                  Показывать по
+                  <div class="services__select-wrap">
+                    <select
+                      name="services-show"
+                      id="services__show"
+                      class="services__pre-table-select"
+                    >
+                      <option value="10" class="services__pre-table-option"
+                        >10</option
+                      >
+                    </select>
+                    <img
+                      src="img/select-arrow-aft.png"
+                      alt="Стрелка"
+                      class="services__pre-table-img"
+                    />
+                  </div>
+                </label>
+                <div class="services__btns">
+                  <button class="services__btn-page">
+                    1</button
+                  ><button class="services__btn-page">
+                    2</button
+                  ><button class="services__btn-page">
+                    3</button
+                  ><button class="services__btn-page">
+                    4</button
+                  ><button class="services__btn-page">
+                    ...
+                  </button>
+                </div>
+              </div>
+              <div class="table-scroll">
+                <table class="services__table table">
+                  <tr class="services__tr-title tr-title" price="0" order="0">
+                    <td class="services__td-title td-title">
+                      Фото
+                    </td>
+                    <td class="services__td-title td-title">
+                      Наименование
+                    </td>
+                    <td class="services__td-title td-title">
+                      Порядок
+                    </td>
+                    <td class="services__td-title td-title">
+                      Категория
+                    </td>
+                    <td class="services__td-title td-title">
+                      Описание
+                    </td>
+                    <td class="services__td-title td-title">
+                      Стоимость
+                    </td>
+                    <td class="services__td-title td-title"></td>
+                  </tr>
+                  <tr class="services__tr" price="1000" order="1">
+                    <td class="services__td td">
+                      <div class="services__td-pic">
+                        <img
+                          src="img/tr-img.png"
+                          alt="Фото к услуге/товару"
+                          class="services__td-img td-pic"
+                        />
+                      </div>
+                    </td>
+                    <td class="services__td td">
+                      <p class="services__td-name td-name">
+                        Название услуги или товара
+                      </p>
+                    </td>
+                    <td class="services__td td td-order">
+                      <p class="services__td-order td-order-p">
+                        1
+                      </p>
+                    </td>
+                    <td class="services__td td td-category">
+                      <p class="services__td-category">
+                        Подходящая категория
+                      </p>
+                    </td>
+                    <td class="services__td td td-desk">
+                      <p class="services__td-desk">
+                        Описание товара или услуги будет длинным Описание товара
+                        или услуги будет длиннымОписание товара или услуги будет
+                        линнымОписание товара или услуги будет длиннымОписание
+                        товара или услуги будет длинным
+                      </p>
+                      <button
+                        type="button"
+                        class="services__td-hide-btn td-hide-btn"
+                      >
+                        Свернуть
+                      </button>
+                    </td>
+                    <td class="services__td td td-cost">
+                      <p class="services__td-cost">
+                        1000 руб.
+                      </p>
+                    </td>
+                    <td class="services__td td td_btns">
+                      <button
+                        class="services__btn td__btn services__btn_edit"
+                        type="button"
+                      >
+                        <img
+                          src="img/edit.svg"
+                          alt="Редактировать"
+                          class="services__btn-edit"
+                        />
+                      </button>
+                      <button
+                        class="services__btn td__btn services__btn_delete"
+                        type="button"
+                      >
+                        <img
+                          src="img/delete.svg"
+                          alt="Удалить услугу"
+                          class="services__btn-edit"
+                        />
+                      </button>
+                    </td>
+                  </tr>
+                  <tr class="services__tr" price="100000" order="2">
+                    <td class="services__td td">
+                      <div class="services__td-pic">
+                        <img
+                          src="img/tr-img.png"
+                          alt="Фото к услуге/товару"
+                          class="services__td-img td-pic"
+                        />
+                      </div>
+                    </td>
+                    <td class="services__td td">
+                      <p class="services__td-name td-name">
+                        Название услуги или товара
+                      </p>
+                    </td>
+                    <td class="services__td td td-order">
+                      <p class="services__td-order td-order-p">
+                        2
+                      </p>
+                    </td>
+                    <td class="services__td td td-category">
+                      <p class="services__td-category">
+                        Подходящая категория
+                      </p>
+                    </td>
+                    <td class="services__td td td-desk">
+                      <p class="services__td-desk">
+                        Описание товара или услуги будет длинным Описание товара
+                        или услуги будет длиннымОписание товара или услуги будет
+                        линнымОписание товара или услуги будет длиннымОписание
+                        товара или услуги будет длинным
+                      </p>
+                      <button
+                        type="button"
+                        class="services__td-hide-btn td-hide-btn"
+                      >
+                        Свернуть
+                      </button>
+                    </td>
+                    <td class="services__td td td-cost">
+                      <p class="services__td-cost">
+                        100000 руб.
+                      </p>
+                    </td>
+                    <td class="services__td td td_btns">
+                      <button
+                        class="services__btn td__btn services__btn_edit"
+                        type="button"
+                      >
+                        <img
+                          src="img/edit.svg"
+                          alt="Редактировать"
+                          class="services__btn-edit"
+                        />
+                      </button>
+                      <button
+                        class="services__btn td__btn services__btn_delete"
+                        type="button"
+                      >
+                        <img
+                          src="img/delete.svg"
+                          alt="Удалить услугу"
+                          class="services__btn-edit"
+                        />
+                      </button>
+                    </td>
+                  </tr>
+                  <tr class="services__tr" price="10000" order="3">
+                    <td class="services__td td">
+                      <div class="services__td-pic">
+                        <img
+                          src="img/tr-img.png"
+                          alt="Фото к услуге/товару"
+                          class="services__td-img td-pic"
+                        />
+                      </div>
+                    </td>
+                    <td class="services__td td">
+                      <p class="services__td-name td-name">
+                        Название услуги или товара
+                      </p>
+                    </td>
+                    <td class="services__td td td-order">
+                      <p class="services__td-order td-order-p">
+                        3
+                      </p>
+                    </td>
+                    <td class="services__td td td-category">
+                      <p class="services__td-category">
+                        Подходящая категория
+                      </p>
+                    </td>
+                    <td class="services__td td td-desk">
+                      <p class="services__td-desk">
+                        Описание товара или услуги будет длинным Описание товара
+                        или услуги будет длиннымОписание товара или услуги будет
+                        линнымОписание товара или услуги будет длиннымОписание
+                        товара или услуги будет длинным
+                      </p>
+                      <button
+                        type="button"
+                        class="services__td-hide-btn td-hide-btn"
+                      >
+                        Свернуть
+                      </button>
+                    </td>
+                    <td class="services__td td td-cost">
+                      <p class="services__td-cost">
+                        10000 руб.
+                      </p>
+                    </td>
+                    <td class="services__td td td_btns">
+                      <button
+                        class="services__btn td__btn services__btn_edit"
+                        type="button"
+                      >
+                        <img
+                          src="img/edit.svg"
+                          alt="Редактировать"
+                          class="services__btn-edit"
+                        />
+                      </button>
+                      <button
+                        class="services__btn td__btn services__btn_delete"
+                        type="button"
+                      >
+                        <img
+                          src="img/delete.svg"
+                          alt="Удалить услугу"
+                          class="services__btn-edit"
+                        />
+                      </button>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+              <div class="services__btn-add-wrap btn-add-wrap">
+                <button class="services__btn-add btn-add">
+                  <img
+                    src="img/plus-add-new-tr.png"
+                    alt="Плюс"
+                    class="services__btn-add-img"
+                  />
+                  <br />
+                  <span class="services__btn-add-text btn-add-text">
+                    Добавить услугу/товар
+                  </span>
+                </button>
+              </div>
+              <div class="services__new-tr-wrap">
+                <div class="services__new-tr">
+                  <div class="services__new-tr-item">
+                    <label
+                      for="select-new-tr-category"
+                      class="services__new-tr-label all-form_select"
+                    >
+                      <p class="services__new-tr-p all-form-p">
+                        Категория:
+                      </p>
+                      <select
+                        name="new-tr"
+                        id="select-new-tr-category"
+                        class="services__new-tr-select all-form-input"
+                      >
+                        <option value="SPA" class="services__new-tr-option">
+                          Спа-услуги
+                        </option>
+                        <option value="SPA" class="services__new-tr-option">
+                          Спа-услуги
+                        </option>
+                        <option value="SPA" class="services__new-tr-option">
+                          Спа-услуги
+                        </option>
+                      </select>
+                    </label>
+                    <label
+                      for="select-new-tr-name"
+                      class="services__new-tr-label"
+                    >
+                      <p class="services__new-tr-p all-form-p">
+                        Наименование:
+                      </p>
+                      <input
+                        type="text"
+                        id="select-new-tr-name"
+                        class="services__new-tr-input all-form-input"
+                        placeholder="Название услуги тут"
+                      />
+                    </label>
+                    <label
+                      for="select-new-tr-cost"
+                      class="services__new-tr-label"
+                    >
+                      <p class="services__new-tr-p all-form-p">
+                        Стоимость (руб):
+                      </p>
+                      <input
+                        type="text"
+                        id="select-new-tr-cost"
+                        class="services__new-tr-input all-form-input"
+                        placeholder="1000 руб."
+                      />
+                    </label>
+                    <label for="services__file" class="services__new-tr-label">
+                      <p class="services__new-tr-p all-form-p">
+                        Стоимость (руб):
+                      </p>
+                      <p class="services__new-tr-p_file all-form-input">
+                        Имя файла....
+                        <img
+                          src="img/add-file.svg"
+                          alt="Скрепка"
+                          class="services__new-tr-p_file-img"
+                        />
+                      </p>
+                      <input
+                        id="services__file"
+                        type="file"
+                        class="services__new-tr-input_file"
+                      />
+                      <p class="services__new-tr-after-input">
+                        Допумтимые форматы JPEG, PNG, максимальный размер файла
+                        5Мб.
+                      </p>
+                    </label>
+                    <label for="service-desk" class="services__new-tr-label">
+                      <p class="services__new-tr-p all-form-p">
+                        Описание услуги/товара:
+                      </p>
+                      <p>
+                        <textarea
+                          id="service-desk"
+                          class="services__new-tr-input all-form-input services__new-tr-input_big"
+                        >
+                        </textarea>
+                      </p>
+                    </label>
+                    <div class="services__new-tr-btn-wrap">
+                      <button class="services__new-tr-btn btn">
+                        Сохранить и добавить
+                      </button>
+                    </div>
+                  </div>
+                  <div class="services__new-tr-item">
+                    <div class="services__new-tr-item-pic">
+                      <img
+                        src="img/logo-2.png"
+                        alt="Лого"
+                        class="services__new-tr-item-img"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form>
+            <div class="rocket services__rocket_bottom">
+              <img src="img/rocket.svg" alt="Ракета" class="rocket__img" />
+            </div>
+          </section>
+        </div>
+        <section class="license">
+          <div class="license__form-title form-title">
+            <div class="license__title-pic form-title-pic">
+              <img
+                src="img/form-3-title.svg"
+                alt=""
+                class="license__title-img form-title-img"
+              />
+            </div>
+            <div class="license__title-num form-title-num">
+              <p class="license__title-num-p form-title-num-p">
+                4
+              </p>
+            </div>
+            <div class="license__title-name form-title-name">
+              <h2 class="license__title-h2 form-title-h2">
+                Сертификаты и лицензии
+              </h2>
+            </div>
+          </div>
+          <div class="license__form-wrap">
+            <form action="" class="license__form">
+              <h4 class="license__form-h4">
+                Текст с кратким описанием в одну или несколько строк идет тут.
+              </h4>
+              <div class="license__slider">
+                <button class="license__slider-btn">
+                  <img
+                    src="img/left.png"
+                    alt="Кнопка переключения влево"
+                    class="license__slider-btn-img"
+                  />
+                </button>
+                <div class="license__file-container">
+                  <div class="license__file-container-pic">
+                    <img
+                      src="img/form-4-png.png"
+                      alt="Сертификат"
+                      class="license__file-container-img"
+                    />
+                  </div>
+                  <div class="license__file-container-pic">
+                    <img
+                      src="img/form-4-png.png"
+                      alt="Сертификат"
+                      class="license__file-container-img"
+                    />
+                  </div>
+                  <div class="license__file-container-pic">
+                    <img
+                      src="img/form-4-png.png"
+                      alt="Сертификат"
+                      class="license__file-container-img"
+                    />
+                  </div>
+                  <div class="license__file-container-pic">
+                    <img
+                      src="img/form-4-png.png"
+                      alt="Сертификат"
+                      class="license__file-container-img"
+                    />
+                  </div>
+                  <div class="license__file-container-pic">
+                    <img
+                      src="img/form-4-png.png"
+                      alt="Сертификат"
+                      class="license__file-container-img"
+                    />
+                  </div>
+                  <div class="license__file-container-pic">
+                    <img
+                      src="img/form-4-png.png"
+                      alt="Сертификат"
+                      class="license__file-container-img"
+                    />
+                  </div>
+                  <div class="license__file-container-pic">
+                    <img
+                      src="img/form-4-png.png"
+                      alt="Сертификат"
+                      class="license__file-container-img"
+                    />
+                  </div>
+                  <div class="license__file-container-pic">
+                    <img
+                      src="img/form-4-png.png"
+                      alt="Сертификат"
+                      class="license__file-container-img"
+                    />
+                  </div>
+                  <div class="license__file-container-pic">
+                    <img
+                      src="img/form-4-png.png"
+                      alt="Сертификат"
+                      class="license__file-container-img"
+                    />
+                  </div>
+                  <div class="license__file-container-pic">
+                    <img
+                      src="img/form-4-png.png"
+                      alt="Сертификат"
+                      class="license__file-container-img"
+                    />
+                  </div>
+                  <div class="license__file-container-pic">
+                    <img
+                      src="img/form-4-png.png"
+                      alt="Сертификат"
+                      class="license__file-container-img"
+                    />
+                  </div>
+                  <label
+                    for="add-license"
+                    class="license__file-container-label"
+                  >
+                    <span class="license__file-container-label-plus">
+                      +
+                    </span>
+                    <input
+                      id="add-license"
+                      type="file"
+                      class="license__file-container-input"
+                    />
+                  </label>
+                </div>
+                <button class="license__slider-btn">
+                  <img
+                    src="img/right.png"
+                    alt="Кнопка переключения вправо"
+                    class="license__slider-btn-img"
+                  />
+                </button>
+              </div>
+              <button class="license__btn btn">
+                Сохранить и продолжить
+              </button>
+            </form>
+          </div>
+        </section>
+        <div class="main-inner-sales">
+          <div class="rocket sales__rocket">
+            <img src="img/rocket.svg" alt="Ракета" class="rocket__img" />
+          </div>
+          <section class="sales">
+            <div class="sales__top">
+              <div class="sales__top-item">
+                <div class="sales__form-title form-title">
+                  <div class="sales__form-title-pic form-title-pic">
+                    <img
+                      src="img/form-5-title.svg"
+                      alt=""
+                      class="sales__form-title-img form-title-img"
+                    />
+                  </div>
+                  <div class="sales__form-title-num form-title-num">
+                    <p class="sales__form-title-num-p form-title-num-p">
+                      5
+                    </p>
+                  </div>
+                  <div class="sales__form-title-name form-title-name">
+                    <h2 class="sales__form-title-h2 form-title-h2">
+                      Акции и спецпредложения
+                    </h2>
+                  </div>
+                </div>
+              </div>
+              <div class="sales__top-item">
+                <div class="sales__pic">
+                  <img
+                    src="img/form-5-pic.png"
+                    alt="Фото к 5 секции"
+                    class="sales__img"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="table-scroll">
+              <table class="sales__table table">
+                <tr class="sales__tr-title tr-title">
+                  <td class="sales__td-title td-title">
+                    Фото
+                  </td>
+                  <td class="sales__td-title td-title">
+                    Наименование
+                  </td>
+                  <td class="sales__td-title td-title">
+                    Порядок
+                  </td>
+                  <td class="sales__td-title td-title ">
+                    Описание условий проведения
+                  </td>
+                  <td class="sales__td-title td-title">
+                    Период проведения
+                  </td>
+                  <td class="sales__td-title td-title"></td>
+                </tr>
+                <tr class="sales__tr">
+                  <td class="sales__td td">
+                    <div class="sales__td-pic">
+                      <img
+                        src="img/tr-img.png"
+                        alt="Фото к услуге/товару"
+                        class="sales__td-img td-pic"
+                      />
+                    </div>
+                  </td>
+                  <td class="sales__td td">
+                    <p class="sales__td-name td-name">
+                      Наименование акции
+                    </p>
+                  </td>
+                  <td class="sales__td td">
+                    <p class="sales__td-order td-order td-order-p">
+                      1
+                    </p>
+                  </td>
+                  <td class="sales__td td">
+                    <p class="sales__td-desk td-desk">
+                      Описание акции будет длинным (несколько строк или абзацев)
+                    </p>
+                    <button
+                      type="button"
+                      class="sales__td-hide-btn td-hide-btn"
+                    >
+                      Свернуть
+                    </button>
+                  </td>
+                  <td class="sales__td td">
+                    <p class="sales__td-time td-cost">
+                      01.01.2018- 01.02.2018
+                    </p>
+                  </td>
+                  <td class="sales__td td td_btns">
+                    <button
+                      class="sales__btn sales__btn_edit td__btn"
+                      type="button"
+                    >
+                      <img
+                        src="img/edit.svg"
+                        alt="Редактировать"
+                        class="sales__btn-edit"
+                      />
+                    </button>
+                    <button
+                      class="sales__btn sales__btn_delete td__btn"
+                      type="button"
+                    >
+                      <img
+                        src="img/delete.svg"
+                        alt="Удалить услугу"
+                        class="sales__btn-edit"
+                      />
+                    </button>
+                  </td>
+                </tr>
+              </table>
+            </div>
+
+            <div class="sales__btn-add-wrap btn-add-wrap">
+              <button class="sales__btn-add btn-add">
+                <img
+                  src="img/plus-add-new-tr.png"
+                  alt="Плюс"
+                  class="sales__btn-add-img"
+                />
+                <br />
+                <span class="sales__btn-add-text btn-add-text">
+                  Добавить акцию
+                </span>
+              </button>
+            </div>
+            <div class="sales__new-tr">
+              <div class="sales__new-tr-it">
+                <div class="sales__new-tr-wrap-item">
+                  <label for="sales-title" class="sales__new-tr-label ">
+                    <p class="sales__new-tr-p all-form-p">
+                      Заголовок акции:
+                    </p>
+                    <input
+                      type="text"
+                      class="sales__new-tr-input all-form-input"
+                      id="sales-title"
+                      placeholder="Заголовок акции тут"
+                    />
+                  </label>
+                  <label for="add-sale-photo" class="sales__new-tr-label">
+                    <p class="sales__new-tr-p all-form-p">
+                      Добавить фото:
+                    </p>
+                    <p class="sales__new-tr-p_file all-form-input">
+                      Имя файла....
+                      <img
+                        src="img/add-file.svg"
+                        alt="Скрепка"
+                        class="sales__new-tr-p_file-img"
+                      />
+                    </p>
+                    <input
+                      id="add-sale-photo"
+                      type="file"
+                      class="sales__new-tr-input sales__new-tr-input_hide"
+                    />
+                    <p class="sales__new-tr-after-input">
+                      Допумтимые форматы JPEG, PNG, максимальный размер файла
+                      5Мб.
+                    </p>
+                  </label>
+                  <label
+                    for="sale-start"
+                    class="sales__new-tr-label all-form_cal"
+                  >
+                    <p class="sales__new-tr-p all-form-p">
+                      Начало акции:
+                    </p>
+                    <input
+                      type="date"
+                      id="sale-start"
+                      class="sales__new-tr-input all-form-input"
+                    />
+                  </label>
+                  <label
+                    for="sale-end"
+                    class="sales__new-tr-label all-form_cal"
+                  >
+                    <p class="sales__new-tr-p all-form-p">
+                      Окончание акции:
+                    </p>
+                    <input
+                      type="date"
+                      id="sale-end"
+                      class="sales__new-tr-input all-form-input"
+                    />
+                  </label>
+                </div>
+
+                <div class="sales__new-tr-wrap-item">
+                  <label for="sale-desk" class="sales__new-tr-label">
+                    <p class="sales__new-tr-p all-form-p">
+                      Описание услуги/товара:
+                    </p>
+                    <p>
+                      <textarea
+                        type="text"
+                        id="sale-desk"
+                        placeholder="Lorem ipsum dolor sit amet, consectetur adipiscinut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                        class="sales__new-tr-input all-form-input sales__new-tr-input_big"
+                      ></textarea>
+                    </p>
+                  </label>
+                </div>
+              </div>
+              <div class="sales__btn-wrap">
+                <button class="sales__new-tr-btn btn">
+                  Сохранить и добавить
+                </button>
+              </div>
+            </div>
+          </section>
+          <div class="rocket sales__rocket_bottom">
+            <img src="img/rocket.svg" alt="Ракета" class="rocket__img" />
+          </div>
+        </div>
+        <div class="main-inner-masters">
+          <section class="masters">
+            <div class="masters__item">
+              <div class="masters__form-title form-title">
+                <div class="masters__form-title-pic form-title-pic">
+                  <img
+                    src="img/form-6-title.svg"
+                    alt=""
+                    class="masters__form-title-img form-title-img"
+                  />
+                </div>
+                <div class="masters__form-title-num form-title-num">
+                  <p class="masters__form-title-num-p form-title-num-p">
+                    6
+                  </p>
+                </div>
+                <div class="masters__form-title-name form-title-name">
+                  <h2 class="masters__form-title-h2 form-title-h2">
+                    Наши мастера
+                  </h2>
+                </div>
+              </div>
+              <div class="masters__form-pic">
+                <img
+                  src="img/masters.png"
+                  alt="Мастера"
+                  class="masters__form-img"
+                />
+              </div>
+            </div>
+            <div class="masters__item">
+              <form action="" class="masters__form">
+                <div class="masters__slider">
+                  <button class="masters__slider-btn">
+                    <img
+                      src="img/left.png"
+                      alt="Кнопка переключения влево"
+                      class="masters__slider-btn-img"
+                    />
+                  </button>
+                  <div class="masters__file-container">
+                    <div class="masters__file-container-pic">
+                      <img
+                        src="img/masters-img-sl.png"
+                        alt="Сертификат"
+                        class="masters__file-container-img"
+                      />
+                    </div>
+                    <div class="masters__file-container-pic">
+                      <img
+                        src="img/masters-img-sl.png"
+                        alt="Сертификат"
+                        class="masters__file-container-img"
+                      />
+                    </div>
+                    <div class="masters__file-container-pic">
+                      <img
+                        src="img/masters-img-sl.png"
+                        alt="Сертификат"
+                        class="masters__file-container-img"
+                      />
+                    </div>
+                    <div class="masters__file-container-pic">
+                      <img
+                        src="img/masters-img-sl.png"
+                        alt="Сертификат"
+                        class="masters__file-container-img"
+                      />
+                    </div>
+                    <label
+                      for="add-masters"
+                      class="masters__file-container-label"
+                    >
+                      <span class="masters__file-container-label-plus">
+                        +
+                      </span>
+                      <input
+                        id="add-masters"
+                        type="file"
+                        class="masters__file-container-input"
+                      />
+                    </label>
+                  </div>
+                  <button class="masters__slider-btn">
+                    <img
+                      src="img/right.png"
+                      alt="Кнопка переключения вправо"
+                      class="masters__slider-btn-img"
+                    />
+                  </button>
+                </div>
+                <p class="masters__p">
+                  Текст с кратким описанием в одну или несколько строк идет тут.
+                  Текст с кратким описанием в однутут.
+                </p>
+                <div class="masters__label-wrap">
+                  <label for="masters-name" class="masters__label">
+                    <p class="masters__label-p all-form-p">
+                      ФИО мастера
+                    </p>
+                    <input
+                      type="text"
+                      class="masters__input all-form-input"
+                      id="masters-name"
+                      placeholder="Иванова Анжела Петро"
+                    />
+                  </label>
+                  <label for="masters-photo" class="masters__label">
+                    <p class="masters__label-p all-form-p">
+                      Добавить фото:
+                    </p>
+                    <p class="sales__new-tr-p_file all-form-input">
+                      Имя файла....
+                      <img
+                        src="img/add-file.svg"
+                        alt="Скрепка"
+                        class="sales__new-tr-p_file-img"
+                      />
+                    </p>
+                    <input
+                      id="masters-photo"
+                      type="file"
+                      class="masters__new-tr-input masters__new-tr-input_hide"
+                    />
+                    <p class="masters__new-tr-after-input">
+                      Допумтимые форматы JPEG, PNG, максимальный размер файла
+                      5Мб.
+                    </p>
+                  </label>
+                  <label
+                    for="masters-spec"
+                    class="masters__label all-form_select"
+                  >
+                    <p class="masters__label-p all-form-p">
+                      Специализация
+                    </p>
+                    <select
+                      id="masters-spec"
+                      class="masters__input masters__input_select all-form-input"
+                      ><option
+                        value="Парикмахер"
+                        class="masters__input_select-option"
+                        >Парикмахер</option
+                      >
+                      <option
+                        value="Парикмахер"
+                        class="masters__input_select-option"
+                        >Парикмахер</option
+                      >
+                    </select>
+                  </label>
+                </div>
+                <button type="button" class="masters__btn btn">
+                  Сохранить и добавить
+                </button>
+              </form>
+            </div>
+          </section>
+          <div class="rocket masters__rocket_bottom">
+            <img src="img/rocket.svg" alt="Ракета" class="rocket__img" />
+          </div>
+        </div>
+        <div class="main-inner-m-class">
+          <section class="m-class">
+            <div class="m-class__item m-class__item_title">
+              <div class="m-class__form-title form-title">
+                <div class="m-class__form-title-pic form-title-pic">
+                  <img
+                    src="img/form-7-title.svg"
+                    alt=""
+                    class="m-class__form-title-img form-title-img"
+                  />
+                </div>
+                <div class="m-class__form-title-num form-title-num">
+                  <p class="m-class__form-title-num-p form-title-num-p">
+                    7
+                  </p>
+                </div>
+                <div class="m-class__form-title-name form-title-name">
+                  <h2 class="m-class__form-title-h2 form-title-h2">
+                    Мастерклассы
+                  </h2>
+                </div>
+              </div>
+              <div class="m-class__form-pic">
+                <img
+                  src="img/form-7-back.png"
+                  alt="Мастера"
+                  class="m-class__form-img"
+                />
+              </div>
+            </div>
+            <div class="m-class__item">
+              <form action="" class="m-class__form">
+                <div class="m-class__label-wrap">
+                  <label for="m-class-name" class="m-class__label">
+                    <p class="m-class__label-p all-form-p">
+                      Наименование
+                    </p>
+                    <input
+                      type="text"
+                      class="m-class__input all-form-input"
+                      id="m-class-name"
+                      placeholder="Иванова Анжела Петро"
+                    />
+                  </label>
+                  <label for="m-class-add-png" class="m-class__label">
+                    <p class="m-class__label-p all-form-p">
+                      Добавить фото:
+                    </p>
+                    <p class="m-class__new-tr-p_file all-form-input">
+                      Имя файла....
+                      <img
+                        src="img/add-file.svg"
+                        alt="Скрепка"
+                        class="m-class__new-tr-p_file-img"
+                      />
+                    </p>
+                    <input
+                      id="m-class-add-png"
+                      type="file"
+                      class="m-class__new-tr-input m-class__new-tr-input_hide"
+                    />
+                    <p class="m-class__new-tr-after-input">
+                      Допумтимые форматы JPEG, PNG, максимальный размер файла
+                      5Мб.
+                    </p>
+                  </label>
+                  <label for="m-class-desk" class="m-class__label">
+                    <p class="sales__new-tr-p all-form-p">
+                      Описание услуги/товара:
+                    </p>
+                    <p>
+                      <textarea
+                        id="m-class-desk"
+                        type="text"
+                        placeholder="Lorem ipsum dolor sit amet, consectetur adipiscinut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                        class="sales__new-tr-input all-form-input sales__new-tr-input_big"
+                      ></textarea>
+                    </p>
+                  </label>
+                </div>
+                <button type="button" class="m-class__btn btn">
+                  Сохранить и добавить
+                </button>
+              </form>
+            </div>
+          </section>
+          <div class="rocket m-class__rocket_bottom">
+            <img src="img/rocket.svg" alt="Ракета" class="rocket__img" />
+          </div>
+        </div>
+        <div class="main-inner-vacancy">
+          <div class="rocket vacancy__rocket">
+            <img src="img/rocket.svg" alt="Ракета" class="rocket__img" />
+          </div>
+          <section class="vacancy">
+            <div class="vacancy__item">
+              <div class="vacancy__form-title form-title">
+                <div class="vacancy__form-title-pic form-title-pic">
+                  <img
+                    src="img/form-8-title.svg"
+                    alt=""
+                    class="vacancy__form-title-img form-title-img"
+                  />
+                </div>
+                <div class="vacancy__form-title-num form-title-num">
+                  <p class="vacancy__form-title-num-p form-title-num-p">
+                    8
+                  </p>
+                </div>
+                <div class="vacancy__form-title-name form-title-name">
+                  <h2 class="vacancy__form-title-h2 form-title-h2">
+                    Вакансии
+                  </h2>
+                </div>
+              </div>
+              <div class="vacancy__form-pic">
+                <img
+                  src="img/form-8-back.png"
+                  alt="Мастера"
+                  class="vacancy__form-img"
+                />
+              </div>
+            </div>
+            <div class="vacancy__item">
+              <form action="" class="vacancy__form">
+                <div class="vacancy__label-wrap">
+                  <label for="vacancy-name" class="vacancy__label">
+                    <p class="vacancy__label-p all-form-p">
+                      Наименование
+                    </p>
+                    <input
+                      type="text"
+                      class="vacancy__input all-form-input"
+                      id="vacancy-name"
+                      placeholder="Иванова Анжела Петро"
+                    />
+                  </label>
+                  <label for="vacancy-photo" class="vacancy__label">
+                    <p class="vacancy__label-p all-form-p">
+                      Добавить фото:
+                    </p>
+                    <p class="vacancy__new-tr-p_file all-form-input">
+                      Имя файла....
+                      <img
+                        src="img/add-file.svg"
+                        alt="Скрепка"
+                        class="vacancy__new-tr-p_file-img"
+                      />
+                    </p>
+                    <input
+                      id="vacancy-photo"
+                      type="file"
+                      class="vacancy__new-tr-input vacancy__new-tr-input_hide"
+                    />
+                    <p class="vacancy__new-tr-after-input">
+                      Допумтимые форматы JPEG, PNG, максимальный размер файла
+                      5Мб.
+                    </p>
+                  </label>
+                  <label for="vacancy-desk" class="vacancy__label">
+                    <p class="sales__new-tr-p all-form-p">
+                      Описание вакансии:
+                    </p>
+                    <p>
+                      <textarea
+                        type="text"
+                        id="vacancy-desk"
+                        placeholder="Lorem ipsum dolor sit amet, consectetur adipiscinut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                        class="sales__new-tr-input all-form-input sales__new-tr-input_big"
+                      ></textarea>
+                    </p>
+                  </label>
+                </div>
+                <button type="button" class="vacancy__btn btn">
+                  Сохранить и добавить
+                </button>
+              </form>
+            </div>
+          </section>
+          <div class="rocket vacancy__rocket_bottom">
+            <img src="img/rocket.svg" alt="Ракета" class="rocket__img" />
+          </div>
+        </div>
+        <div class="main-inner-additional">
+          <section class="additional">
+            <div class="additional__form-title form-title">
+              <div class="additional__form-title-pic form-title-pic">
+                <img
+                  src="img/form-9-title.svg"
+                  alt=""
+                  class="additional__form-title-img form-title-img"
+                />
+              </div>
+              <div class="additional__form-title-num form-title-num">
+                <p class="additional__form-title-num-p form-title-num-p">
+                  9
+                </p>
+              </div>
+              <div class="additional__form-title-name form-title-name">
+                <h2 class="additional__form-title-h2 form-title-h2">
+                  Дополнительные услуги
+                </h2>
+              </div>
+            </div>
+            <div class="additional__item-wrap">
+              <div class="additional__item additional__item_pic">
+                <div class="additional__pic">
+                  <img
+                    src="img/throne.png"
+                    alt="Трон"
+                    class="additional__img"
+                  />
+                </div>
+              </div>
+              <div class="additional__item">
+                <h4 class="additional__h4">
+                  Вы можете сделать свою страницу ярче, выделив его среди
+                  других. Как на странице выбранного раздела, так и на всех
+                  страницах портала
+                </h4>
+                <form action="" class="additional__form">
+                  <label for="add-1" class="additional__label">
+                    <div class="additional__tip">
+                      <img
+                        src="img/tip.png"
+                        alt="Пункт"
+                        class="additional__img"
+                      />
+                    </div>
+                    <input
+                      type="checkbox"
+                      name="addit-service"
+                      id="add-1"
+                      class="additional__input"
+                    />
+                    <p class="additional__p">
+                      Продлить размещение на 3 дня
+                    </p>
+                    <p class="additional__p additional__p-cost">
+                      0 руб.
+                    </p>
+                    <div class="additional__back"></div>
+                  </label>
+                  <label for="add-2" class="additional__label all-form_select">
+                    <div class="additional__tip">
+                      <img
+                        src="img/tip.png"
+                        alt="Пункт"
+                        class="additional__img"
+                      />
+                    </div>
+                    <input
+                      type="checkbox"
+                      name="addit-service"
+                      id="add-2"
+                      class="additional__input"
+                    />
+                    <p class="additional__p">
+                      ВИП-страница
+                    </p>
+                    <select class="additional__select" name="" id="">
+                      <option value="Month">
+                        Месяц
+                      </option>
+                      <option value="Month">
+                        Месяц
+                      </option>
+                      <option value="Month">
+                        Месяц
+                      </option>
+                    </select>
+
+                    <p class="additional__p additional__p-cost">
+                      0 руб.
+                    </p>
+                    <div class="additional__back"></div>
+                  </label>
+                  <label for="add-3" class="additional__label all-form_select">
+                    <div class="additional__tip">
+                      <img
+                        src="img/tip.png"
+                        alt="Пункт"
+                        class="additional__img"
+                      />
+                    </div>
+                    <input
+                      type="checkbox"
+                      name="addit-service"
+                      id="add-3"
+                      class="additional__input"
+                    />
+                    <p class="additional__p">
+                      Платная услуга
+                    </p>
+                    <select class="additional__select" name="" id="">
+                      <option value="Month">
+                        Месяц
+                      </option>
+                      <option value="Month">
+                        Месяц
+                      </option>
+                      <option value="Month">
+                        Месяц
+                      </option>
+                    </select>
+                    <p class="additional__p additional__p-cost">
+                      650 руб
+                    </p>
+                    <div class="additional__back"></div>
+                  </label>
+                  <label for="add-4" class="additional__label">
+                    <div class="additional__tip">
+                      <img
+                        src="img/tip.png"
+                        alt="Пункт"
+                        class="additional__img"
+                      />
+                    </div>
+                    <input
+                      type="checkbox"
+                      name="addit-service"
+                      id="add-4"
+                      class="additional__input"
+                    />
+                    <p class="additional__p">
+                      Показать в ТОП на 24 часа
+                    </p>
+                    <p class="additional__p additional__p-cost">
+                      650 руб
+                    </p>
+                    <div class="additional__back"></div>
+                  </label>
+                  <label for="add-5" class="additional__label">
+                    <div class="additional__tip">
+                      <img
+                        src="img/tip.png"
+                        alt="Пункт"
+                        class="additional__img"
+                      />
+                    </div>
+                    <input
+                      type="checkbox"
+                      name="addit-service"
+                      id="add-5"
+                      class="additional__input"
+                    />
+                    <p class="additional__p">
+                      Показать в ТОР на 24 часа, GOLD
+                    </p>
+                    <p class="additional__p additional__p-cost">
+                      650 руб
+                    </p>
+                    <div class="additional__back"></div>
+                  </label>
+                  <button class="additional__btn btn">
+                    Сохранить изменения
+                  </button>
+                </form>
+              </div>
+            </div>
+          </section>
+        </div>
+        <div class="main-inner-finish">
+          <section class="finish">
+            <h2 class="finish__title">Поздравляем!</h2>
+            <p class="finish__subtitle">
+              Ваша персональная страница салона готова!
+            </p>
+            <a href="#" class="finish__link">
+              Посмотреть
+            </a>
+          </section>
+        </div>
+      </main>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>

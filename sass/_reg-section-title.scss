@@ -1,0 +1,36 @@
+.form-title {
+  display: flex;
+  &-num {
+    color: #981b6c;
+    font-family: "Gotham Pro";
+    font-size: 55px;
+    font-weight: 100;
+    letter-spacing: 3.3px;
+    padding-left: 26px;
+    padding-top: 3px;
+  }
+  &-h2 {
+    width: 166px;
+    color: #3f3f3f;
+    font-family: "Gotham Pro";
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 23.98px;
+    letter-spacing: 1.44px;
+    padding-left: 37px;
+    padding-top: 5px;
+  }
+}
+@media (max-width: 750px) {
+  .form-title {
+    &-h2 {
+      padding-left: 15px;
+    }
+    &-pic {
+      display: none;
+    }
+    &-num {
+      padding-left: 15px;
+    }
+  }
+}

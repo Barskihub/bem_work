@@ -1,0 +1,230 @@
+// need _reg-section-title.scss _reg-btns.scss
+.main-inner-general-info {
+  position: relative;
+}
+.general-info {
+  max-width: 1230px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  &__form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-top: 70px;
+    padding-bottom: 33px;
+    margin-left: 68px;
+    &-p {
+      padding-top: 5px;
+      margin-left: auto;
+    }
+    &-options {
+      margin-top: 34px;
+      display: flex;
+      flex-direction: column;
+      justify-content: right;
+    }
+    &-container {
+      display: flex;
+      justify-content: space-between;
+    }
+    &-label {
+      display: flex;
+      justify-content: right;
+      margin-bottom: 11px;
+      position: relative;
+      &_cal {
+        &::after {
+          content: url("../img/calendar.svg");
+          width: 19px;
+          height: 18px;
+          position: absolute;
+          right: 15px;
+          top: 6px;
+          pointer-events: none;
+        }
+      }
+    }
+    &-input {
+      width: 300px;
+      height: 31px;
+      margin-left: 23px;
+      position: relative;
+      &-select {
+        appearance: none;
+      }
+    }
+    &-i-logo {
+      margin-top: 34px;
+      display: block;
+      position: relative;
+      &-img {
+        width: 42px;
+        height: 35px;
+        background: url("../img/photo-logo-n.svg");
+      }
+      &::after {
+        content: url("../img/after-logo-comp.png");
+        width: 177px;
+        height: 155px;
+        position: absolute;
+        bottom: 13px;
+        right: -54px;
+        z-index: -1;
+      }
+      &-content {
+        width: 252px;
+        height: 252px;
+        border-radius: 5px;
+        border: 1px solid #dcdcdc;
+        background-color: #ffffff;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        margin: 5px;
+        &:hover .general-info__form-i-logo-p {
+          color: #a9217d;
+        }
+        &:hover {
+          border: 1px solid #a9217d;
+        }
+        &:hover .general-info__form-i-logo-img {
+          background: url("../img/photo-logo.svg");
+        }
+        &-wrap {
+          width: 268px;
+          height: 268px;
+          border-radius: 5px;
+          border: 3px solid #981b6c;
+          background-color: #ffffff;
+          position: relative;
+          z-index: 1;
+          &:hover {
+            cursor: pointer;
+          }
+          &::before {
+            content: url("../img/plus-logo-tip.png");
+            width: 23px;
+            height: 23px;
+            position: absolute;
+            left: 118px;
+            bottom: -14px;
+          }
+        }
+      }
+      &-p {
+        width: 140px;
+        color: #b8b8b8;
+        font-family: "Gotham Pro";
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 23.98px;
+        text-align: center;
+      }
+    }
+  }
+  &__logo-company-in {
+    display: none;
+  }
+  &__company-log-in {
+    &-p {
+      height: 62px;
+      color: #959595;
+      font-family: "Gotham Pro";
+      font-size: 14px;
+      font-weight: 300;
+      margin-left: 38px;
+    }
+    &-add {
+      display: flex;
+      width: 300px;
+      margin-left: 23px;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+    &_n {
+      display: none;
+    }
+  }
+  &__btn {
+    margin-left: auto;
+  }
+}
+
+@media (max-width: 1311px) {
+  .general-info {
+    &__pic {
+      display: none;
+    }
+    &__form {
+      &-options {
+        margin-left: 30px;
+      }
+      &-container {
+        margin: auto;
+      }
+    }
+  }
+}
+
+@media (max-width: 980px) {
+  .general-info {
+    &__form {
+      &-label {
+      }
+      &-container {
+        flex-direction: column;
+      }
+      &-i-logo {
+        &::after {
+          bottom: -10px;
+          right: 270px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 750px) {
+  .general-info {
+    &__company {
+      &-log-in-add {
+        margin-left: 0;
+      }
+    }
+    &__btn {
+      padding: 15px 30px 13px 30px !important;
+      margin-left: 0 !important;
+      margin-right: auto;
+    }
+    &__form {
+      margin-left: 10px;
+      &-container {
+      }
+      &-options {
+        margin-left: 0;
+      }
+      &-i-logo::after {
+        display: none;
+      }
+      &-p {
+        margin-left: 0;
+        margin-bottom: 5px;
+      }
+      &-input {
+        margin-left: 0;
+      }
+      &-label {
+        flex-direction: column;
+        margin-right: auto;
+        margin-left: 0;
+        justify-content: left;
+        &_cal::after {
+          top: 34px;
+        }
+      }
+    }
+  }
+}

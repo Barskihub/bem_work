@@ -1,0 +1,47 @@
+.all-form {
+  &-p {
+    color: #2a2929;
+    font-family: "Gotham Pro";
+    font-size: 16px;
+    font-weight: 600;
+  }
+  &-input {
+    border-radius: 7px;
+    border: 1px solid #dddddd;
+    height: 31px;
+    color: #838383;
+    font-family: "Gotham Pro";
+    font-size: 17px;
+    font-weight: 300;
+    padding-left: 34px;
+    position: relative;
+    &:focus,
+    &:hover {
+      border: 1px solid #981b6c;
+    }
+  }
+  &_select::after {
+    content: url("../img/select-arrow-aft.png");
+    width: 19px;
+    height: 18px;
+    position: absolute;
+    right: 15px;
+    top: 36px;
+    pointer-events: none;
+  }
+  &_cal::after {
+    content: url("../img/calendar.svg");
+    width: 19px;
+    height: 18px;
+    position: absolute;
+    right: 15px;
+    top: 36px;
+    pointer-events: none;
+  }
+}
+
+.td-desk_hide {
+  overflow: hidden;
+  height: 35px;
+  
+}

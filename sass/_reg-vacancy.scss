@@ -1,0 +1,136 @@
+.main-inner-vacancy {
+  position: relative;
+  margin-top: -13px;
+  padding-bottom: 10px;
+}
+.vacancy {
+  max-width: 1230px;
+  margin: auto;
+  padding-top: 49px;
+  display: flex;
+  justify-content: space-between;
+  &__rocket {
+    top: 0 !important;
+    z-index: 1 !important;
+    &::before {
+      width: 80% !important;
+    }
+    &::after {
+      width: 20% !important;
+    }
+    &_bottom {
+      top: auto !important;
+      bottom: 0 !important;
+      z-index: 1 !important;
+      &::before {
+        width: 85% !important;
+      }
+      &::after {
+        width: 15% !important;
+      }
+    }
+  }
+  &__item {
+    margin-right: 20px;
+  }
+  &__label {
+    &-p {
+      margin-bottom: 13px;
+    }
+    &-wrap {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-top: 130px;
+    }
+  }
+  &__new-tr {
+    &-p_file {
+      width: 270px;
+      background: #ffffff;
+      position: relative;
+      padding-top: 5px;
+      &-img {
+        position: absolute;
+        right: 10px;
+        top: 5px;
+      }
+    }
+    &-input_hide {
+      display: none;
+    }
+    &-after-input {
+      width: 255px;
+      height: 28px;
+      color: #959595;
+      font-family: "Gotham Pro";
+      font-size: 14px;
+      font-weight: 300;
+      margin-top: 14px;
+    }
+  }
+  &__input {
+    width: 270px;
+  }
+  &__btn {
+    margin-top: 13px;
+  }
+}
+
+@media (max-width: 1300px) {
+  .vacancy {
+    padding-left: 30px;
+    padding-right: 30px;
+    flex-direction: column;
+    &__form {
+      padding-bottom: 20px;
+    }
+    &__form-pic {
+      display: none;
+    }
+    &__label {
+      margin-right: 15px;
+      &-wrap {
+        justify-content: left;
+        flex-wrap: wrap;
+      }
+    }
+    &__btn {
+      font-size: 14px !important;
+      padding: 15px 30px 13px 30px !important;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .vacancy {
+    &__btn {
+      margin: auto;
+      margin-top: 20px;
+    }
+    &__label {
+      &-wrap {
+        justify-content: center;
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .vacancy {
+    padding-left: 10px;
+    padding-right: 10px;
+    &__btn {
+      margin: auto;
+      margin-top: 13px;
+    }
+    &__label {
+      margin: auto;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    &__label-wrap {
+      margin-top: 20px;
+    }
+  }
+}

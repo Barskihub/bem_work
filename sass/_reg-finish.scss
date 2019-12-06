@@ -1,0 +1,69 @@
+.main-inner-finish {
+  background: url("../img/back-finish.png") no-repeat;
+  background-size: cover;
+}
+.finish {
+  max-width: 1230px;
+  margin: auto;
+  padding-left: 100px;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 100px;
+  &__title {
+    padding-top: 179px;
+    color: #ffffff;
+    font-family: "Gotham Pro";
+    font-size: 48px;
+    font-weight: 700;
+    letter-spacing: 2.88px;
+  }
+  &__subtitle {
+    padding-top: 30px;
+    width: 380px;
+    color: #ffffff;
+    font-family: "Gotham Pro";
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: 1.44px;
+  }
+  &__link {
+    border-radius: 18px;
+    border: 2px solid #ffffff;
+    color: #ffffff;
+    font-family: "Gotham Pro";
+    font-size: 15px;
+    font-weight: 400;
+    text-decoration: none;
+    padding: 10px 25px;
+    margin-top: 65px;
+    width: 170px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 1200px) {
+  .finish {
+    padding-left: 30px;
+  }
+}
+@media (max-width: 600px) {
+  .finish {
+    text-align: center;
+    &__link {
+      margin: auto;
+      margin-top: 65px;
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .finish {
+    padding-left: 10px;
+    &__title {
+      font-size: 36px;
+    }
+    &__subtitle {
+      width: auto;
+    }
+  }
+}

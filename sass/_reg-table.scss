@@ -1,0 +1,113 @@
+.table {
+  border-collapse: collapse;
+}
+.tr-title {
+  color: #981b6c;
+  font-family: "Gotham Pro";
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.td-title {
+  padding: 20px;
+  border: none;
+  border-bottom: 1px solid #981b6c;
+}
+
+.td {
+  padding: 14px;
+  vertical-align: top;
+  padding-top: 31px;
+  &_btns {
+    display: flex;
+    align-items: center;
+    margin: auto;
+  }
+  &__btn {
+    border: none;
+    background: none;
+    margin-left: 23px;
+  }
+  &-hide-btn {
+    border: none;
+    border-bottom: 1px solid #c4c1c1;
+    background: none;
+    color: #838383;
+    font-family: "Gotham Pro";
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 28px;
+    &::after {
+      content: url("../img/arrow-up-desk.png");
+      width: 5px;
+      height: 5px;
+    }
+  }
+  &-pic {
+    border: 1px solid #981b6c;
+    border-radius: 30px;
+  }
+  &-name {
+    color: #3f3f3f;
+    font-family: "Gotham Pro";
+    font-size: 16px;
+    font-weight: 700;
+  }
+  &-order-p {
+    &::after {
+      content: url("../img/arrow-up.png");
+      width: 5px;
+      height: 5px;
+    }
+  }
+  &-order,
+  &-cost {
+    text-align: center;
+    color: #3f3f3f;
+    font-family: "Gotham Pro";
+    font-size: 16px;
+    font-weight: 700;
+  }
+  &-category,
+  &-desk {
+    color: #3f3f3f;
+    font-family: "Gotham Pro";
+    font-size: 16px;
+    font-weight: 400;
+  }
+}
+
+.btn-add {
+  border: none;
+  background: none;
+  border-bottom: 1px solid #981b6c;
+  margin-top: 31px;
+  &-text {
+    color: #981b6c;
+    font-family: "Gotham Pro";
+    font-size: 16px;
+    font-weight: 700;
+  }
+  &-plus {
+    width: 37px;
+    height: 37px;
+    color: #981b6c;
+    font-family: "Gotham Pro";
+    font-size: 36px;
+    font-weight: 400;
+    border: 2px solid #981b6c;
+    border-radius: 50px;
+    display: block;
+    margin: auto;
+  }
+  &-wrap {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 16px;
+  }
+}
+
+.table-scroll {
+  width: 100%;
+  overflow: scroll;
+}

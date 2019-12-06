@@ -1,0 +1,343 @@
+.main-inner-services {
+  position: relative;
+}
+.services {
+  position: relative;
+  &__rocket {
+    top: -13px !important;
+    z-index: 1 !important;
+    &_bottom {
+      top: auto !important;
+      bottom: 0 !important;
+      z-index: 1 !important;
+      margin-bottom: 40px;
+      &::before {
+        width: 70% !important;
+      }
+      &::after {
+        width: 30% !important;
+      }
+    }
+  }
+  &__top {
+    max-width: 1230px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    &-item {
+      margin-top: 6px;
+    }
+  }
+  &__form {
+    &-subtitle {
+      width: 479px;
+      height: 99px;
+      color: #3f3f3f;
+      font-family: "Gotham Pro";
+      font-size: 17px;
+      font-weight: 300;
+      line-height: 28px;
+      /* Text style for "Текст с кр" */
+      letter-spacing: 1.02px;
+      margin-top: 79px;
+      margin-left: 65px;
+    }
+    &-title {
+      margin-top: 66px;
+    }
+  }
+  &__table {
+    max-width: 1230px;
+    margin: auto;
+  }
+  &__pre-table {
+    display: flex;
+    max-width: 1230px;
+    margin: auto;
+    &-select {
+      color: #838383;
+      font-family: "Gotham Pro";
+      font-size: 16px;
+      font-weight: 300;
+      line-height: 28px;
+      appearance: none;
+      border: none;
+      padding-right: 20px;
+    }
+    &-label {
+      color: #3f3f3f;
+      font-family: "Gotham Pro";
+      font-size: 17px;
+      font-weight: 400;
+      line-height: 28px;
+      position: relative;
+      padding-right: 30px;
+      display: flex;
+    }
+    &-img {
+      pointer-events: none;
+      position: absolute;
+      right: 0;
+      top: 10px;
+    }
+  }
+  &__select-wrap {
+    border-bottom: 1px solid#c4c1c1;
+    position: relative;
+    margin-left: 10px;
+  }
+  &__btns {
+    margin-left: auto;
+  }
+  &__btn {
+    position: relative;
+    &_edit {
+      &:hover::after {
+        display: block;
+      }
+      &::after {
+        content: "Редактировать";
+        color: #575757;
+        font-family: "Gotham Pro";
+        font-size: 11px;
+        font-weight: 300;
+        width: 95px;
+        height: 16px;
+        box-shadow: 0 3px 5px 1px rgba(0, 0, 0, 0.38);
+        border-radius: 4px;
+        background-color: #f8f8f8;
+        position: absolute;
+        top: 31px;
+        right: -36px;
+        display: none;
+        padding-top: 3px;
+      }
+    }
+    &_delete {
+      &:hover::after {
+        display: block;
+      }
+      &::after {
+        content: "Удалить";
+        color: #575757;
+        font-family: "Gotham Pro";
+        font-size: 11px;
+        font-weight: 300;
+        width: 60px;
+        height: 16px;
+        box-shadow: 0 3px 5px 1px rgba(0, 0, 0, 0.38);
+        border-radius: 4px;
+        background-color: #f8f8f8;
+        position: absolute;
+        top: 31px;
+        right: -21px;
+        display: none;
+        padding-top: 3px;
+      }
+    }
+  }
+  &__btn-page {
+    width: 20px;
+    border: none;
+    background: none;
+    color: #3f3f3f;
+    font-family: "Gotham Pro";
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 28px;
+    margin-left: 15px;
+    border-bottom: 1px solid #ffffff;
+    &:hover {
+      border-bottom: 1px solid #981b6c;
+    }
+  }
+  &__new-tr {
+    max-width: 1230px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding-top: 80px;
+    &-wrap {
+      background: url("../img/back-3-a.png");
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+    &-label {
+      margin-bottom: 23px;
+      margin-left: 34px;
+      position: relative;
+      &::after {
+        top: 39px !important;
+      }
+    }
+    &-item {
+      max-width: 610px;
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 70px;
+      &-pic {
+        margin-top: auto;
+        margin-left: 381px;
+      }
+    }
+    &-after-input {
+      width: 255px;
+      color: #959595;
+      font-family: "Gotham Pro";
+      font-size: 14px;
+      font-weight: 300;
+      margin-top: 17px;
+    }
+    &-p_file {
+      width: 270px;
+      background: #ffffff;
+      position: absolute;
+      padding-top: 5px;
+      &-img {
+        position: absolute;
+        right: 10px;
+        top: 5px;
+      }
+    }
+    &-select {
+      width: 270px;
+      appearance: none;
+    }
+    &-input {
+      width: 270px;
+      &_big {
+        height: 150px !important;
+        width: 570px;
+      }
+    }
+    &-btn {
+      margin-left: 34px;
+    }
+    &-p {
+      margin-bottom: 15px;
+    }
+    &-input_file {
+      display: none;
+    }
+  }
+  &__btn-add-img {
+    margin-bottom: 13px;
+  }
+  &__td-desk {
+    transition: all 0.5s;
+  }
+}
+
+@media (max-width: 1300px) {
+  .services {
+    &__top {
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+    &__new-tr-item-pic {
+      display: none;
+    }
+    &__pic {
+      display: none;
+    }
+    &__pre-table {
+      margin-top: 40px;
+      padding-left: 30px;
+      padding-right: 30px;
+      &-label {
+        margin-bottom: 10px;
+      }
+    }
+    &__form {
+      &-subtitle {
+        margin-left: 0;
+        margin-top: 20px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1060px) {
+  .services {
+    &__top {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+    &__form {
+      &-subtitle {
+        width: 90vw;
+      }
+    }
+    &__pre-table {
+      flex-wrap: wrap;
+      justify-content: left;
+    }
+    &__btn {
+      &-page {
+        margin-left: 0;
+        margin-right: 15px;
+      }
+    }
+    &__btns {
+      margin-left: 0;
+    }
+    &__new-tr {
+      &-label {
+        text-align: center;
+      }
+      &-item {
+        justify-content: center;
+      }
+      &-input_big {
+        width: 500px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .services {
+    &__new-tr {
+      justify-content: center;
+    }
+  }
+}
+
+@media (max-width: 620px) {
+  .services {
+    &__new-tr {
+      &-btn {
+        margin: auto;
+      }
+      &-label {
+        margin: auto;
+        margin-bottom: 20px;
+      }
+      &-input_big {
+        width: 300px;
+      }
+    }
+    &__form {
+      &-subtitle {
+        margin-bottom: 20px;
+      }
+      &-subtitle-p {
+        width: 85vw;
+      }
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .services {
+    &__new-tr {
+      &-btn {
+        margin-left: 5px;
+      }
+      &-label {
+        margin-left: auto;
+      }
+    }
+  }
+}
